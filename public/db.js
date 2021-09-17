@@ -21,7 +21,7 @@ request.onerror = function(event) {
   console.log("Woops! " + event.target.errorCode);
 };
 
-request.saveRecord(record) {
+function saveRecord(record) {
   // create a transaction on the pending db with readwrite access
   const transaction = db.transaction(["pending"], "readwrite");
 
