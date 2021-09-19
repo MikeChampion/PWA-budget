@@ -1,4 +1,4 @@
-# Tech Blog
+# PWA Budget Tracker
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -14,24 +14,23 @@ VII. [License](#license)
 
 ## <a id="description">I. Description</a>
 
-A CMS style blog site where users can make blog posts, and comment on the posts of other users.
+A Progressive web app budget tracker that can be used online and offline to track your budget even when you don't have an internet connection.
 
 ## <a id="install-instructions">II. Install Instructions</a>
 
-Fork it, clone it, from the terminal 'npm i' will install the dotenv, express, express-handlebars, express-session, connect-session-sequelize, sequelize, bcrypt, and MySQL2 packages. Make sure to include a .env file in the root folder with your local MySQL username and password, using 'blog_db' for the database name.
+Fork it, clone it, from the terminal 'npm i' will install the mongoose, express, lite-server, compression, and morgan packages. 
 
 ## <a id="usage-information">III. Usage Information</a>
 
-Connect your terminal to mysql and run 'db/source schema.sql' to initialize the database. Then run 'npm start' to run the app. This will use localhost:3001/
+Run 'npm start' to run the app. This will use localhost:3000/
 
 ### Project Screenshot
 
-![Tech blog screenshot 1](./public/images/Screenshot1.png)
-![Tech blog screenshot 2](./public/images/Screenshot2.png)
+![PWA budget tracker screenshot](./public/images/Screenshot.png)
 
 ### Credits
 
-This NodeJS project uses <a href="https://www.npmjs.com/package/express" target="_blank">express</a> for the server, the <a href="https://www.npmjs.com/package/express-handlebars" target="_blank">express-handlebars</a> templating engine, <a href="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a> to secure environment variables, <a href="https://www.npmjs.com/package/sequelize" target="_blank">Sequelize</a> to work with the database, <a href="https://www.npmjs.com/package/connect-session-sequelize" target="_blank">connect-session-sequelize</a> and <a href="https://www.npmjs.com/package/express-session" target="_blank">express-session</a>for session data, <a href="https://www.npmjs.com/package/bcrypt" target="_blank">bcrypt</a> to hash the password, and <a href="https://www.npmjs.com/package/mysql2" target="_blank">mysql2</a> to connect to the database.
+This NodeJS project uses <a href="https://www.npmjs.com/package/express" target="_blank">express</a> for the server, <a href="https://www.npmjs.com/package/lite-server" target="_blank">lite-server</a> to serve the web app, <a href="https://www.npmjs.com/package/morgan" target="_blank">morgan</a>and <a href="https://www.npmjs.com/package/compression" target="_blank">compression</a> for the middleware, and <a href="https://www.npmjs.com/package/mongoose" target="_blank">mongoose</a> to connect to the database.
 
 ## <a id="contribution-guidelines">IV. Contribution Guidelines</a>
 
